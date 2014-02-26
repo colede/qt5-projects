@@ -1,0 +1,6 @@
+#!/bin/sh
+if [ "$#" -gt 0 ]; then
+  /hdd/qt5/qtbase/configure -prefix /hdd/qt5/install -opensource -nomake examples -nomake tests -no-gtkstyle -confirm-license -debug "$@"
+else
+  /hdd/qt5/qtbase/configure -prefix /hdd/qt5/install -opensource -nomake examples -nomake tests -no-gtkstyle -confirm-license -debug
+fi
